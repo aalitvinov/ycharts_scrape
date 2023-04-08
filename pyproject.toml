@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ycharts-scrape"
+version = "0.1.0"
+description = "ycharts scraping prototype"
+authors = ["aalitvinov <aalitvinov_2@edu.hse.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ycharts_scrape"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "^4.12.1"
+lxml = "^4.9.2"
+pytest-playwright = "^0.3.2"
+polars = "^0.16.18"
+pyarrow = "^11.0.0"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+black = "^23.3.0"
+python-dotenv = "^1.0.0"
+tqdm = "^4.65.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
